@@ -1,3 +1,7 @@
+import login.Login;
+import pencocokanKendaraan.PencocokanKendaraan;
+import pembayaranPajakMobil.pembayaranPajakMobil;
+import buktiPembayaran.BuktiPembayaran;
 public class Main {
     public static void main(String[] args) {
         // Data pengguna
@@ -17,7 +21,7 @@ public class Main {
             if(validasiBerhasil){
                 System.out.println("Validasi kendaraan atas nama " + user1.getUsername() + " berhasil dilakukan");
                 // lanjut ke proses class diagram berikutnya  
-
+                
             }else{
                 System.out.println("Validasi kendaraan atas nama" + user1.getUsername() + " tidak berhasil dilakukan");
             }

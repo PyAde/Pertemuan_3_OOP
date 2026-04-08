@@ -19,6 +19,6 @@ public double hitungTagihanPajak() {
     } else {
         totalTagihan = 15000000;
     }
-    return totalTagihanPajak;
+    return totalTagihan;
 }
 }
