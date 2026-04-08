@@ -19,6 +19,6 @@ public class Login {
         return this.username;
     }
     public void logout(){
-        System.out.println("Anda berhasil keluar");
+        System.out.println(getUsername() +" berhasil keluar dari aplikasi pembayaran pajak");
     }
 }

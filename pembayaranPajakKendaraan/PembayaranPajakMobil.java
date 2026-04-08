@@ -14,7 +14,7 @@ public class PembayaranPajakMobil extends PembayaranPajakKendaraan {
     }
 
 
-    @Override
+
     public double hitungTagihanPajak() {
         double pajakDasar = 0;
 

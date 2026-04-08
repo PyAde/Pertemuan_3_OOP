@@ -14,11 +14,11 @@ public class BuktiPembayaran {
 
 
     public void tampilkanBuktiPembayaran() {
-        System.out.println("=== BUKTI PEMBAYARAN PAJAK ===");
+       
         System.out.println("Tanggal Pelunasan : " + this.tanggalPelunasan);
         System.out.println("Total Dibayar     : Rp " + this.totalDibayar);
         System.out.println("Status            : " + this.statusPembayaran);
-        System.out.println("==============================");
+        
     }
 
     public void cetakPDF() {
