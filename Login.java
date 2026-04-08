@@ -6,7 +6,7 @@ public class Login {
         this.password = password;
     }
     public boolean validasiLogin(){
-        if(this.username.equals("user") && this.password.equals("user123")){
+        if(this.username.equals("Adi") && this.password.equals("user123")){
             System.out.println("Login berhasil");
             return true;
         }else{

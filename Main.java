@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Login user1 = new Login("user", "user123");
+        Login user1 = new Login("Adi", "user123");
 
         boolean loginBerhasil = user1.validasiLogin();
 
@@ -12,10 +12,11 @@ public class Main {
             boolean validasiBerhasil = transport_1.validasiData();
             if(validasiBerhasil){
                 System.out.println("Validasi kendaraan atas nama " + user1.getUsername() + "berhasil dilakukan");
+                // lanjut ke proses class diagram berikutnya 
             }else{
                 System.out.println("Validasi kendaraan atas nama" + user1.getUsername() + "tidak berhasil dilakukan");
             }
-            // lanjut ke proses class diagram berikutnya 
+            
 
         
         user1.logout();
