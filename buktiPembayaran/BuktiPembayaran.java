@@ -1,8 +1,6 @@
-
 package buktiPembayaran;
 
 public class BuktiPembayaran {
-    
     private final  String tanggalPelunasan;
     private final  Double totalDibayar;
     private final String statusPembayaran;
@@ -38,4 +36,3 @@ public class BuktiPembayaran {
     public Double getTotalDibayar() { return totalDibayar; }
     public String getStatusPembayaran() { return statusPembayaran; }
 }
-
