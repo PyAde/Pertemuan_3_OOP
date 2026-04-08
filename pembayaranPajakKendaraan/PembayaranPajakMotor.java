@@ -2,22 +2,18 @@ package pembayaranPajakKendaraan;
 
 public class PembayaranPajakMotor extends PembayaranPajakKendaraan {
     
-
     private final int ccMesin;
     private final String jenisMotor;
 
-
     public PembayaranPajakMotor(String idTransaksi, String tanggalPembayaran, int ccMesin, String jenisMotor) {
-
         super(idTransaksi, tanggalPembayaran);
         this.ccMesin = ccMesin;
         this.jenisMotor = jenisMotor;
     }
 
 
-
     public double hitungTagihanPajak() {
-        double pajakDasar = 0;
+        double pajakDasar;
 
         if (this.ccMesin <= 150) {
             pajakDasar = 300000;
@@ -26,7 +22,6 @@ public class PembayaranPajakMotor extends PembayaranPajakKendaraan {
         } else {
             pajakDasar = 1000000; 
         }
-
 
         if (this.jenisMotor.equalsIgnoreCase("Sport")) {
             pajakDasar += 150000;
