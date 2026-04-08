@@ -9,14 +9,17 @@ public class Main {
         if(loginBerhasil){
             System.err.println("Login atas nama " + user1.getUsername() + " berhasil");
         
+            // Proses pencocokan kendaraan
+            String pencocokanKendaraan = transport_1.pencocokanKendaraan();
+            System.out.println(pencocokanKendaraan);
             // Validasi kendaraan;
             boolean validasiBerhasil = transport_1.validasiData();
             if(validasiBerhasil){
-                System.out.println("Validasi kendaraan atas nama " + user1.getUsername() + "berhasil dilakukan");
-                // lanjut ke proses class diagram berikutnya 
+                System.out.println("Validasi kendaraan atas nama " + user1.getUsername() + " berhasil dilakukan");
+                // lanjut ke proses class diagram berikutnya  
 
             }else{
-                System.out.println("Validasi kendaraan atas nama" + user1.getUsername() + "tidak berhasil dilakukan");
+                System.out.println("Validasi kendaraan atas nama" + user1.getUsername() + " tidak berhasil dilakukan");
             }
         user1.logout();
         }else{

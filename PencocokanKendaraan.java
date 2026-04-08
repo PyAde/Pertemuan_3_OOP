@@ -10,13 +10,13 @@ public class PencocokanKendaraan {
         this.nomerRangka = nomerRangka;
         this.nomerSTNK = nomerSTNK;
     }
-    public void PencocokanKendaraan(){
-        System.out.println("Proses pencocokan STNK: " + this.nomerSTNK );
-        System.out.println("Proses pencocokan NIK: " + this.NIK );
+    public String pencocokanKendaraan(){
+        String hasilPencocokan = "Proses pencocokan STNK: " + this.nomerSTNK + " & NIK: " + this.NIK;
+        return hasilPencocokan;
 
     }
     public boolean validasiData(){
-        // data asal;
+        // data kendaraan asal;
         String NiK = "012345";
         String NomerMesin = "AB-123";
         String NomerRangka = "BC-123";
