@@ -1,9 +1,9 @@
 package pencocokanKendaraan;
 public class PencocokanKendaraan {
-    private final String NIK;
-    private final String nomerMesin;
-    private final String nomerRangka;
-    private final String nomerSTNK;
+    private  String NIK;
+    private  String nomerMesin;
+    private  String nomerRangka;
+    private  String nomerSTNK;
 
     public PencocokanKendaraan(String NIK, String nomerMesin, String nomerRangka, String nomerSTNK){
         this.NIK = NIK;
