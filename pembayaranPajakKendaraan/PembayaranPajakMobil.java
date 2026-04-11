@@ -2,8 +2,8 @@ package pembayaranPajakKendaraan;
 
 public class PembayaranPajakMobil extends PembayaranPajakKendaraan {
     
-    private final int ccMesin;
-    private final String jenisMobil;
+    private  int ccMesin;
+    private  String jenisMobil;
 
     // Constructor
     public PembayaranPajakMobil(String idTransaksi, String tanggalPembayaran, int ccMesin, String jenisMobil) {
@@ -14,7 +14,7 @@ public class PembayaranPajakMobil extends PembayaranPajakKendaraan {
     }
 
 
-
+    @Override
     public double hitungTagihanPajak() {
         double pajakDasar = 0;
 

@@ -8,7 +8,7 @@ public abstract class PembayaranPajakKendaraan {
     protected String metodePembayaran;
     protected String tanggalPembayaran;
 
-    // Constructor
+  
     public PembayaranPajakKendaraan(String idTransaksi, String tanggalPembayaran) {
         this.idTransaksi = idTransaksi;
         this.tanggalPembayaran = tanggalPembayaran;
@@ -33,6 +33,10 @@ public abstract class PembayaranPajakKendaraan {
     public void setMetodePembayaran(String metodePembayaran) {
         this.metodePembayaran = metodePembayaran;
     }
-    public String getIdTransaksi() { return idTransaksi; }
-    public double getTotalTagihan() { return totalTagihan; }
+    public String getIdTransaksi() { 
+        return idTransaksi; 
+    }
+    public double getTotalTagihan() { 
+        return totalTagihan; 
+    }
 }
