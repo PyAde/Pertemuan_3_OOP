@@ -1,9 +1,9 @@
 package buktiPembayaran;
 
 public class BuktiPembayaran {
-    private final  String tanggalPelunasan;
-    private final  Double totalDibayar;
-    private final String statusPembayaran;
+    private   String tanggalPelunasan;
+    private   Double totalDibayar;
+    private  String statusPembayaran;
 
     // Constructor untuk inisialisasi objek
     public BuktiPembayaran(String tanggalPelunasan, Double totalDibayar, String statusPembayaran) {

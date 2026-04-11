@@ -29,7 +29,7 @@ public class Main {
                 PembayaranPajakMobil pajakMobil = new PembayaranPajakMobil("Transaksi-001", "10-10-1010", 2000, "SUV");
                 pajakMobil.setMetodePembayaran("Transfer Bank");
                 
-                // memproses pembayaran untuk mobil
+                
                 BuktiPembayaran resiMobil = pajakMobil.prosesPembayaran("LUNAS");
                 resiMobil.tampilkanBuktiPembayaran(); 
                 System.out.println("=========================================\n");
@@ -38,7 +38,7 @@ public class Main {
                 PembayaranPajakMotor pajakMotor = new PembayaranPajakMotor("Transaksi-002", "10-10-1010", 150, "Matic");
                 pajakMotor.setMetodePembayaran("CASH");
                 
-                // memproses pembayaran untuk motor
+                
                 BuktiPembayaran resiMotor = pajakMotor.prosesPembayaran("LUNAS");
                 resiMotor.tampilkanBuktiPembayaran(); 
                 System.out.println("=========================================\n");

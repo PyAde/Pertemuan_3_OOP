@@ -7,6 +7,7 @@ public abstract class PembayaranPajakKendaraan {
     protected double totalTagihan;
     protected String metodePembayaran;
     protected String tanggalPembayaran;
+    protected  BuktiPembayaran bukti;
 
   
     public PembayaranPajakKendaraan(String idTransaksi, String tanggalPembayaran) {
@@ -23,11 +24,8 @@ public abstract class PembayaranPajakKendaraan {
         this.totalTagihan = hitungTagihanPajak();
         
         
-        System.out.println("Transaksi [" + this.idTransaksi + "] sedang diproses...");
-        System.out.println("Total Tagihan: Rp " + this.totalTagihan);
-        
-
-        return new BuktiPembayaran(this.tanggalPembayaran, this.totalTagihan, status);
+        this.bukti = new BuktiPembayaran(this.tanggalPembayaran, this.totalTagihan, status);
+        return this.bukti;
     }
 
     public void setMetodePembayaran(String metodePembayaran) {
