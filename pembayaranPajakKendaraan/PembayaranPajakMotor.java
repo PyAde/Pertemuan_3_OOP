@@ -2,8 +2,8 @@ package pembayaranPajakKendaraan;
 
 public class PembayaranPajakMotor extends PembayaranPajakKendaraan {
     
-    private final int ccMesin;
-    private final String jenisMotor;
+    private  int ccMesin;
+    private  String jenisMotor;
 
     public PembayaranPajakMotor(String idTransaksi, String tanggalPembayaran, int ccMesin, String jenisMotor) {
         super(idTransaksi, tanggalPembayaran);

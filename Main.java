@@ -16,7 +16,6 @@ public class Main {
         if(loginBerhasil){
             System.out.println("Login atas nama " + user1.getUsername() + " berhasil masuk");
             
-        
 
             String pencocokanKendaraan = transport_1.pencocokanKendaraan();
             System.out.println(pencocokanKendaraan);
