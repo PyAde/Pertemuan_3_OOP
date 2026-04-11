@@ -10,9 +10,9 @@ public class Login {
     }
     public Login(){
         Scanner input = new Scanner(System.in);
-        System.out.println("Masukan nama: ");
+        System.out.print("Masukan nama: ");
         this.username = input.nextLine();
-        System.out.println("Masukan password: ");
+        System.out.print("Masukan password: ");
         this.password = input.nextLine();
     }
     public boolean validasiLogin(){
