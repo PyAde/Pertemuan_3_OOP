@@ -6,9 +6,9 @@ import pencocokanKendaraan.PencocokanKendaraan;
 
 public class Main {
     public static void main(String[] args) {
+        
 
-
-        Login user1 = new Login("Adi", "user123");
+        Login user1 = new Login();
         PencocokanKendaraan transport_1 = new PencocokanKendaraan("012345", "AB-123", "BC-123", "CD-123");
 
         boolean loginBerhasil = user1.validasiLogin();

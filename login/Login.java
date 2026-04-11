@@ -1,10 +1,19 @@
 package login;
+import java.util.Scanner;
 public class Login {
-    private final String username;
-    private final String password;
+  
+    private  String username;
+    private  String password;
     public  Login(String username, String password){
         this.username = username;
         this.password = password;
+    }
+    public Login(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukan nama: ");
+        this.username = input.nextLine();
+        System.out.println("Masukan password: ");
+        this.password = input.nextLine();
     }
     public boolean validasiLogin(){
         if(this.username.equals("Adi") && this.password.equals("user123")){
